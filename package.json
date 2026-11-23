@@ -1,10 +1,12 @@
+
 {
   "name": "tailwind-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,13 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^4.3.5"
   }
 }
